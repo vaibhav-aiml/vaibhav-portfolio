@@ -93,17 +93,32 @@ export default async function ProjectPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Hero Image in Cusped Arch Frame */}
-      <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-gold/30 mb-12 shadow-2xl bg-surface-container-lowest">
-        <Image
-          src={project.image}
-          alt={`${project.title} detailed architectural showcase`}
-          fill
-          priority
-          sizes="(max-width: 1024px) 100vw, 1024px"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none" />
+      {/* Hero Showcase (Video or Architectural Frame) */}
+      <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-primary/30 mb-12 shadow-2xl bg-surface-container-lowest">
+        {project.videoUrl ? (
+          <video
+            src={project.videoUrl}
+            controls
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={project.image}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <>
+            <Image
+              src={project.image}
+              alt={`${project.title} detailed architectural showcase`}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none" />
+          </>
+        )}
       </div>
 
       {/* Stats Bar */}

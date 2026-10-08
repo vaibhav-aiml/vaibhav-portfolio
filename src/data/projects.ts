@@ -14,6 +14,7 @@ export interface ProjectItem {
   githubUrl: string;
   index: string;
   telemetryHighlight: string;
+  videoUrl?: string;
 }
 
 export const projectCategories = ["All", "AI-ML", "Full-Stack", "Backend"] as const;
