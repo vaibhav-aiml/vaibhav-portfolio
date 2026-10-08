@@ -53,7 +53,7 @@ export const projects: ProjectItem[] = [
       "23 comprehensive Vitest integration and unit test suites",
     ],
     liveUrl: "https://majestic-speculoos-f73a91.netlify.app/",
-    githubUrl: "https://github.com/vaibhav-aiml/medivoice-ai",
+    githubUrl: "https://github.com/vaibhav-aiml/ai-medical-voice-agent",
     devanagariIndex: "०१",
   },
   {
@@ -121,7 +121,7 @@ export const projects: ProjectItem[] = [
       "Docker containerized microservice with automated health checks",
     ],
     liveUrl: "https://truffle-agent-qq5mv4nx7wocr2jrrzbvkw.streamlit.app/",
-    githubUrl: "https://github.com/vaibhav-aiml/truffle",
+    githubUrl: "https://github.com/vaibhav-aiml/truffle-agent",
     devanagariIndex: "०३",
   },
   {
