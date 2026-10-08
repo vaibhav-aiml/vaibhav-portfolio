@@ -12,30 +12,25 @@ import {
   Database,
   Cpu,
   Gauge,
-  ShieldCheck,
-  Terminal as TerminalIcon,
-  GitFork,
-  FileText,
-  Workflow,
-  Sparkles,
 } from "lucide-react";
-import { GithubIcon } from "@/components/ui/Icons";
-import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
-import TechTag from "@/components/ui/TechTag";
-import { projects, projectCategories, ProjectItem } from "@/data/projects";
+import { projects, projectCategories } from "@/data/projects";
+
+type CategoryFilter = (typeof projectCategories)[number];
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [activeCategory, setActiveCategory] = useState<CategoryFilter>("All");
 
   const filteredProjects = projects.filter((p) => {
     if (activeCategory === "All") return true;
-    return p.categories.includes(activeCategory as any);
+    return (p.categories as readonly string[]).includes(activeCategory);
   });
 
   const flagshipProject = projects[0]; // MediVoice AI
   const gridProjects = filteredProjects.filter((p) => p.id !== flagshipProject.id);
-  const showFlagship = activeCategory === "All" || flagshipProject.categories.includes(activeCategory as any);
+  const showFlagship =
+    activeCategory === "All" ||
+    (flagshipProject.categories as readonly string[]).includes(activeCategory);
 
   return (
     <section
@@ -297,7 +292,7 @@ export default function Projects() {
                         className="inline-flex items-center gap-1 text-xs font-label-caps text-primary hover:text-primary-container uppercase font-bold"
                       >
                         <span>Demo</span>
-                        <Rocket className="w-3 h-3" />
+                        <Rocket className="w-3.5 h-3.5" />
                       </a>
                       <span className="text-outline/40">·</span>
                       <a
@@ -307,7 +302,7 @@ export default function Projects() {
                         className="inline-flex items-center gap-1 text-xs font-label-caps text-on-surface-variant hover:text-on-surface uppercase"
                       >
                         <span>Code</span>
-                        <Code className="w-3 h-3" />
+                        <Code className="w-3.5 h-3.5" />
                       </a>
                     </div>
 
@@ -316,7 +311,7 @@ export default function Projects() {
                       className="font-code-tech-xs text-[11px] text-outline hover:text-primary transition-colors flex items-center gap-0.5"
                     >
                       <span>Specs</span>
-                      <ArrowRight className="w-3 h-3" />
+                      <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 </div>
