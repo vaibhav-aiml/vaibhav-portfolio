@@ -77,8 +77,8 @@ export default function Navbar() {
               className="text-headline-sm font-headline-sm font-bold text-primary tracking-wider flex items-center gap-1.5 group"
             >
               <span>VB.ai</span>
-              <span className="text-code-tech-xs font-code-tech-xs text-primary-container font-normal tracking-widest opacity-80 group-hover:opacity-100 transition-opacity font-devanagari">
-                जयपुर
+              <span className="text-code-tech-xs font-code-tech-xs text-primary-container font-semibold tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">
+                JAIPUR
               </span>
             </Link>
           </div>
@@ -104,8 +104,8 @@ export default function Navbar() {
             className="text-headline-sm font-headline-sm font-bold text-primary tracking-wider flex items-center gap-1.5 group"
           >
             <span>VB.ai</span>
-            <span className="text-code-tech-xs font-code-tech-xs text-primary-container font-normal tracking-widest opacity-80 group-hover:opacity-100 transition-opacity font-devanagari">
-              जयपुर
+            <span className="text-code-tech-xs font-code-tech-xs text-primary-container font-semibold tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">
+              JAIPUR
             </span>
           </Link>
 

@@ -6,7 +6,6 @@ interface SectionHeadingProps {
   badge: string;
   title: string;
   subtitle?: string;
-  devanagariWatermark?: string;
   align?: "center" | "left";
 }
 
@@ -14,7 +13,6 @@ export default function SectionHeading({
   badge,
   title,
   subtitle,
-  devanagariWatermark,
   align = "center",
 }: SectionHeadingProps) {
   const isCenter = align === "center";
@@ -25,17 +23,7 @@ export default function SectionHeading({
         isCenter ? "text-center mx-auto" : "text-left"
       } max-w-3xl`}
     >
-      {/* Subtle Devanagari Background Watermark */}
-      {devanagariWatermark && (
-        <span
-          aria-hidden="true"
-          className="absolute -top-8 md:-top-12 left-1/2 -translate-x-1/2 font-devanagari text-6xl md:text-8xl lg:text-9xl font-black text-on-surface/5 select-none pointer-events-none whitespace-nowrap z-0"
-        >
-          {devanagariWatermark}
-        </span>
-      )}
-
-      {/* Heritage Category Tag */}
+      {/* Category Tag */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}

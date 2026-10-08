@@ -16,10 +16,9 @@ export default function Achievements() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative"
     >
       <SectionHeading
-        badge="❖ ०६ / ACHIEVEMENTS"
+        badge="❖ 06 / ACHIEVEMENTS"
         title="Competitive Honors & Credentials"
         subtitle="Recognition in nationwide engineering hackathons and industry certification programs."
-        devanagariWatermark="उपलब्धियां"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -39,13 +38,13 @@ export default function Achievements() {
                 className="h-full border-gold/25 hover:border-primary/60 transition-all duration-300 group hover:-translate-y-1 hover:shadow-xl p-5 md:p-6 flex flex-col justify-between"
               >
                 <div>
-                  {/* Top: Icon + Devanagari Index */}
+                  {/* Top: Icon + Index */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="w-12 h-12 rounded-xl bg-surface-container-high border border-gold/30 flex items-center justify-center text-gold group-hover:text-primary group-hover:scale-105 transition-transform">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-base font-devanagari text-gold font-bold">
-                      {item.devanagariIndex}
+                    <span className="text-xs font-code-tech-xs text-gold font-bold">
+                      {item.index}
                     </span>
                   </div>
 

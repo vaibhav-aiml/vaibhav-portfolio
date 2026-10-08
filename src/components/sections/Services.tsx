@@ -21,10 +21,9 @@ export default function Services() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative"
     >
       <SectionHeading
-        badge="❖ ०७ / SERVICES"
+        badge="❖ 07 / SERVICES"
         title="Engineering Solutions Available for Freelance & Contract"
         subtitle="End-to-end technical execution tailored for startups, enterprise proofs-of-concept, and modern web products."
-        devanagariWatermark="सेवाएं"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -44,22 +43,22 @@ export default function Services() {
                 className="h-full border-gold/25 hover:border-primary/60 transition-all duration-300 group hover:-translate-y-1.5 hover:shadow-2xl p-5 md:p-6 flex flex-col justify-between"
               >
                 <div>
-                  {/* Top: Icon + Devanagari Index */}
+                  {/* Top: Icon + Index */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="w-12 h-12 rounded-xl bg-surface-container-high border border-gold/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform group-hover:border-primary">
                       <Icon className="w-6 h-6 text-primary group-hover:text-gold transition-colors" />
                     </div>
-                    <span className="text-sm font-devanagari text-gold font-bold">
-                      {service.devanagariIndex}
+                    <span className="text-xs font-code-tech-xs text-gold font-bold">
+                      {service.index}
                     </span>
                   </div>
 
-                  {/* Title & Devanagari */}
+                  {/* Title & Category */}
                   <h3 className="font-title-lg text-base md:text-lg text-on-surface font-bold group-hover:text-primary transition-colors mb-0.5">
                     {service.title}
                   </h3>
-                  <div className="text-xs font-devanagari text-gold mb-2 font-bold">
-                    {service.titleDevanagari}
+                  <div className="text-xs text-gold mb-2 font-medium">
+                    {service.categoryLabel}
                   </div>
 
                   {/* Tagline */}

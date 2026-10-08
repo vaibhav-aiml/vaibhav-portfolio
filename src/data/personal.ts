@@ -1,6 +1,5 @@
 export const personalData = {
   name: "Vaibhav Badaya",
-  nameDevanagari: "वैभव बडाया",
   title: "Full-Stack & AI Engineer",
   location: "Jaipur, Rajasthan",
   coordinates: "26.9124° N, 75.7873° E",

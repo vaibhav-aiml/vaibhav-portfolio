@@ -64,8 +64,8 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
           </span>
-          <span className="text-code-tech-xs font-code-tech-xs text-primary tracking-widest font-devanagari uppercase">
-            राजपूताना • CREATIVE INTELLIGENCE
+          <span className="text-code-tech-xs font-code-tech-xs text-primary tracking-widest uppercase font-bold">
+            JAIPUR, INDIA • CREATIVE INTELLIGENCE
           </span>
           <span className="text-outline/40 text-xs hidden sm:inline">•</span>
           <span className="text-code-tech-xs font-code-tech-xs text-on-surface-variant hidden sm:inline tracking-wider">
@@ -149,7 +149,7 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Jantar Mantar Telemetry quick stats */}
+        {/* Telemetry quick stats */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -157,7 +157,7 @@ export default function Hero() {
           className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-2xl pt-6 border-t border-gold/15"
         >
           <div className="flex items-center justify-center sm:justify-start gap-2.5 px-3 py-2 rounded-lg bg-surface-container-low/40 border border-gold/10">
-            <span className="text-gold font-devanagari text-xs font-bold">०१</span>
+            <span className="text-gold font-code-tech-xs text-xs font-bold">01</span>
             <div className="text-left">
               <div className="text-code-tech-xs text-primary font-bold">5+ PROJECTS</div>
               <div className="text-[11px] text-on-surface-variant">Full-Stack & AI Systems</div>
@@ -165,7 +165,7 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center justify-center sm:justify-start gap-2.5 px-3 py-2 rounded-lg bg-surface-container-low/40 border border-gold/10">
-            <span className="text-gold font-devanagari text-xs font-bold">०२</span>
+            <span className="text-gold font-code-tech-xs text-xs font-bold">02</span>
             <div className="text-left">
               <div className="text-code-tech-xs text-gold font-bold">JECRC UNIVERSITY</div>
               <div className="text-[11px] text-on-surface-variant">B.Tech CSE (AI & ML)</div>
@@ -173,7 +173,7 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center justify-center sm:justify-start gap-2.5 px-3 py-2 rounded-lg bg-surface-container-low/40 border border-gold/10">
-            <span className="text-gold font-devanagari text-xs font-bold">०३</span>
+            <span className="text-gold font-code-tech-xs text-xs font-bold">03</span>
             <div className="text-left">
               <div className="text-code-tech-xs text-tertiary font-bold">JAIPUR, INDIA</div>
               <div className="text-[11px] text-on-surface-variant">Open to Opportunities</div>

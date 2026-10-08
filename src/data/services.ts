@@ -1,19 +1,19 @@
 export interface ServiceItem {
   id: string;
   title: string;
-  titleDevanagari: string;
+  categoryLabel: string;
   tagline: string;
   description: string;
   deliverables: string[];
   iconName: string;
-  devanagariIndex: string;
+  index: string;
 }
 
 export const services: ServiceItem[] = [
   {
     id: "full-stack",
     title: "Full-Stack Web Applications",
-    titleDevanagari: "वेब ऍप्लिकेशन्स",
+    categoryLabel: "Web Engineering",
     tagline: "End-to-end modern web applications built for speed, scale, and polish.",
     description:
       "Crafting production-ready web apps from responsive frontend architectures in Next.js and React to robust server-side backends and databases with seamless user experiences.",
@@ -24,12 +24,12 @@ export const services: ServiceItem[] = [
       "Secure authentication & session handling",
     ],
     iconName: "Globe",
-    devanagariIndex: "०१",
+    index: "01",
   },
   {
     id: "ai-rag",
     title: "AI Chatbots & RAG Systems",
-    titleDevanagari: "कृत्रिम बुद्धिमत्ता बॉट्स",
+    categoryLabel: "Generative AI",
     tagline: "Intelligent domain-specific copilots grounded in your private documents.",
     description:
       "Developing conversational AI assistants with Retrieval-Augmented Generation (RAG), Groq LLM streaming, vector search, tool calling, and guardrails to prevent hallucinations.",
@@ -40,12 +40,12 @@ export const services: ServiceItem[] = [
       "Strict query validation & injection defenses",
     ],
     iconName: "Bot",
-    devanagariIndex: "०२",
+    index: "02",
   },
   {
     id: "backend-api",
     title: "REST API & Backend Architecture",
-    titleDevanagari: "बैकएंड एवं एपीआई",
+    categoryLabel: "Distributed Systems",
     tagline: "High-throughput, secured, and modular microservices for client apps.",
     description:
       "Designing clean, documented RESTful and WebSocket endpoints with rate limiting, Redis caching, structured logging, and transactional database safety.",
@@ -56,12 +56,12 @@ export const services: ServiceItem[] = [
       "Comprehensive Postman & automated Vitest suites",
     ],
     iconName: "Server",
-    devanagariIndex: "०३",
+    index: "03",
   },
   {
     id: "ml-dashboards",
     title: "ML Prototypes & Dashboards",
-    titleDevanagari: "डैशबोर्ड एवं प्रोटोटाइप",
+    categoryLabel: "Analytics & AI",
     tagline: "Interactive demonstration platforms and graph analytics workflows.",
     description:
       "Turning experimental machine learning models and data science algorithms into intuitive, interactive web dashboards for stakeholders and clients.",
@@ -72,6 +72,6 @@ export const services: ServiceItem[] = [
       "Explainable AI integration (SHAP & GNNExplainer)",
     ],
     iconName: "LineChart",
-    devanagariIndex: "०४",
+    index: "04",
   },
 ];

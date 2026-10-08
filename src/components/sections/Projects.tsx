@@ -26,10 +26,9 @@ export default function Projects() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative"
     >
       <SectionHeading
-        badge="❖ ०४ / PROJECTS"
+        badge="❖ 04 / PROJECTS"
         title="Featured Engineering Systems & AI Deployments"
         subtitle="Full-stack distributed applications, low-latency LLM pipelines, and Graph Neural Network security."
-        devanagariWatermark="प्रकल्प"
       />
 
       {/* Filter Tabs */}
@@ -85,8 +84,8 @@ export default function Projects() {
                     {/* Top Row: Index + Categories + Featured Chip */}
                     <div className="flex items-center justify-between gap-3 mb-4">
                       <div className="flex items-center gap-2">
-                        <span className="text-sm font-devanagari text-gold font-bold">
-                          {project.devanagariIndex}
+                        <span className="text-xs font-code-tech-xs text-gold font-bold">
+                          {project.index}
                         </span>
                         <div className="flex flex-wrap gap-1.5">
                           {project.categories.map((c) => (

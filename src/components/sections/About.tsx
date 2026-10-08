@@ -2,16 +2,16 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Award, Terminal, Download, ExternalLink } from "lucide-react";
+import { GraduationCap, MapPin, Download, ExternalLink } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
 import { personalData } from "@/data/personal";
 
 const STATS = [
-  { label: "Projects Built", value: "6+", devanagari: "०१", detail: "Full-Stack & AI Systems" },
-  { label: "Max Concurrency", value: "50+", devanagari: "०२", detail: "Real-time WebSocket Users" },
-  { label: "Internships", value: "2", devanagari: "०३", detail: "Xebia & QuasysAI" },
-  { label: "Academic CGPA", value: "8.3", devanagari: "०४", detail: "JECRC University (AI & ML)" },
+  { label: "Projects Built", value: "6+", index: "01", detail: "Full-Stack & AI Systems" },
+  { label: "Max Concurrency", value: "50+", index: "02", detail: "Real-time WebSocket Users" },
+  { label: "Internships", value: "2", index: "03", detail: "Xebia & QuasysAI" },
+  { label: "Academic CGPA", value: "8.3", index: "04", detail: "JECRC University (AI & ML)" },
 ];
 
 export default function About() {
@@ -22,10 +22,9 @@ export default function About() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative overflow-hidden"
     >
       <SectionHeading
-        badge="❖ ०२ / ABOUT"
+        badge="❖ 02 / ABOUT"
         title="Engineering Architectural Rigor & Neural Systems"
         subtitle="Bridging classical computational craftsmanship with next-generation generative AI architectures."
-        devanagariWatermark="परिचय"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -45,11 +44,11 @@ export default function About() {
             <div className="relative glass-tier-2 p-3 md:p-4 rounded-2xl border border-gold/30 shadow-2xl">
               {/* Decorative scalloped arch top indicator */}
               <div className="flex items-center justify-between mb-3 px-1 text-gold/70">
-                <span className="text-code-tech-xs font-devanagari text-xs">❖ जयपुर</span>
+                <span className="text-code-tech-xs text-xs font-semibold">❖ JAIPUR</span>
                 <span className="text-code-tech-xs font-code-tech-xs text-[10px] uppercase tracking-widest text-primary">
                   PORTRAIT ARCH
                 </span>
-                <span className="text-code-tech-xs font-devanagari text-xs">२०२६ ❖</span>
+                <span className="text-code-tech-xs text-xs font-semibold">2026 ❖</span>
               </div>
 
               {/* Photo */}
@@ -72,8 +71,8 @@ export default function About() {
                       {personalData.title}
                     </span>
                   </div>
-                  <span className="text-[10px] font-devanagari text-gold font-bold">
-                    {personalData.nameDevanagari}
+                  <span className="text-[11px] font-code-tech-xs text-gold font-bold uppercase tracking-wider">
+                    {personalData.name}
                   </span>
                 </div>
               </div>
@@ -106,8 +105,8 @@ export default function About() {
               <strong className="text-primary font-semibold">JECRC University, Jaipur</strong> (CGPA 8.3/10, graduating May 2027).
             </p>
             <p>
-              My engineering focuses on architecting <span className="text-on-surface">high-throughput REST APIs</span>,
-              responsive real-time systems, and <span className="text-tertiary">LLM-powered applications</span>. From streaming
+              My engineering focuses on architecting <span className="text-on-surface font-medium">high-throughput REST APIs</span>,
+              responsive real-time systems, and <span className="text-tertiary font-medium">LLM-powered applications</span>. From streaming
               sub-2s healthcare consultations with Groq and WebSockets to topological fraud detection with Graph Neural Networks,
               I engineer resilient distributed backends connected to sleek, reactive frontends.
             </p>
@@ -141,8 +140,8 @@ export default function About() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {STATS.map((stat, idx) => (
               <GlassCard key={idx} tier={2} className="p-3 text-center border-gold/20 hover:border-primary/50 transition-colors">
-                <div className="text-[10px] font-devanagari text-gold font-bold mb-1 opacity-70">
-                  {stat.devanagari}
+                <div className="text-[10px] font-code-tech-xs text-gold font-bold mb-1 opacity-80">
+                  {stat.index}
                 </div>
                 <div className="font-display-hero text-2xl md:text-3xl text-primary font-bold tracking-tight">
                   {stat.value}

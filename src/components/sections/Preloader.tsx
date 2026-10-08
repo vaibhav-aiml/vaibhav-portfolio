@@ -149,8 +149,8 @@ export default function Preloader() {
             <p className="text-label-caps font-label-caps text-primary tracking-[0.3em] uppercase">
               Vaibhav Badaya
             </p>
-            <p className="text-code-tech-xs font-code-tech-xs text-outline mt-1 font-devanagari">
-              वैभव बडाया • जयपुर
+            <p className="text-code-tech-xs font-code-tech-xs text-outline mt-1 tracking-wider uppercase">
+              Full-Stack &amp; AI Engineer • Jaipur
             </p>
           </motion.div>
 

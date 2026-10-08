@@ -12,7 +12,7 @@ export interface ProjectItem {
   metrics: string[];
   liveUrl: string;
   githubUrl: string;
-  devanagariIndex: string;
+  index: string;
 }
 
 export const projectCategories = ["All", "AI-ML", "Full-Stack", "Backend"] as const;
@@ -54,7 +54,7 @@ export const projects: ProjectItem[] = [
     ],
     liveUrl: "https://majestic-speculoos-f73a91.netlify.app/",
     githubUrl: "https://github.com/vaibhav-aiml/ai-medical-voice-agent",
-    devanagariIndex: "०१",
+    index: "01",
   },
   {
     id: "fitsphere",
@@ -88,7 +88,7 @@ export const projects: ProjectItem[] = [
     ],
     liveUrl: "https://fitsphere-phi.vercel.app",
     githubUrl: "https://github.com/vaibhav-aiml/fitsphere",
-    devanagariIndex: "०२",
+    index: "02",
   },
   {
     id: "truffle",
@@ -122,7 +122,7 @@ export const projects: ProjectItem[] = [
     ],
     liveUrl: "https://truffle-agent-qq5mv4nx7wocr2jrrzbvkw.streamlit.app/",
     githubUrl: "https://github.com/vaibhav-aiml/truffle-agent",
-    devanagariIndex: "०३",
+    index: "03",
   },
   {
     id: "aml-gnn-upi",
@@ -156,7 +156,7 @@ export const projects: ProjectItem[] = [
     ],
     liveUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi",
     githubUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi",
-    devanagariIndex: "०४",
+    index: "04",
   },
   {
     id: "linkedin-post-generator",
@@ -180,7 +180,7 @@ export const projects: ProjectItem[] = [
     ],
     liveUrl: "https://tubular-bonbon-644eda.netlify.app/",
     githubUrl: "https://github.com/vaibhav-aiml/linkedin-post-generator",
-    devanagariIndex: "०५",
+    index: "05",
   },
   {
     id: "codeviz-ai",
@@ -204,6 +204,6 @@ export const projects: ProjectItem[] = [
     ],
     liveUrl: "https://codeviz-ai-seven.vercel.app/",
     githubUrl: "https://github.com/vaibhav-aiml/codeviz-ai",
-    devanagariIndex: "०६",
+    index: "06",
   },
 ];

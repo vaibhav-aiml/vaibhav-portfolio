@@ -5,7 +5,7 @@ export interface AchievementItem {
   year: string;
   description: string;
   badge: string;
-  devanagariIndex: string;
+  index: string;
 }
 
 export const achievements: AchievementItem[] = [
@@ -17,7 +17,7 @@ export const achievements: AchievementItem[] = [
     description:
       "Awarded foundation certification demonstrating competency in modern cloud, infrastructure, and computational engineering principles.",
     badge: "Foundation Credential",
-    devanagariIndex: "०१",
+    index: "01",
   },
   {
     id: "adobe-hackathon",
@@ -27,7 +27,7 @@ export const achievements: AchievementItem[] = [
     description:
       "Selected among competitive nationwide university applicants to architect generative media and creative workflow solutions.",
     badge: "National Finalist",
-    devanagariIndex: "०२",
+    index: "02",
   },
   {
     id: "college-hackathons",
@@ -37,6 +37,6 @@ export const achievements: AchievementItem[] = [
     description:
       "Designed and deployed real-time prototypes at competitive university hackathons spanning healthcare AI, smart campus utilities, and fintech security.",
     badge: "Active Competitor",
-    devanagariIndex: "०३",
+    index: "03",
   },
 ];

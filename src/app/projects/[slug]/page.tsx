@@ -47,8 +47,8 @@ export default async function ProjectPage({ params }: Props) {
       {/* Header Info */}
       <div className="mb-10">
         <div className="flex items-center gap-3 mb-3">
-          <span className="text-base font-devanagari text-gold font-bold">
-            {project.devanagariIndex}
+          <span className="text-sm font-code-tech-xs text-gold font-bold">
+            {project.index}
           </span>
           <div className="flex flex-wrap gap-1.5">
             {project.categories.map((c) => (

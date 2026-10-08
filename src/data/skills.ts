@@ -1,7 +1,7 @@
 export interface SkillCategory {
   id: string;
   name: string;
-  nameDevanagari: string;
+  subtitle: string;
   description: string;
   iconName: string;
   skills: string[];
@@ -11,7 +11,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "ai-ml",
     name: "AI & Machine Learning",
-    nameDevanagari: "कृत्रिम बुद्धिमत्ता",
+    subtitle: "Deep Learning & LLMs",
     description: "Generative AI, dense vector retrieval, graph representation learning, and agentic workflows.",
     iconName: "Cpu",
     skills: [
@@ -29,7 +29,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "backend",
     name: "Backend & Systems",
-    nameDevanagari: "बैकएंड प्रणाली",
+    subtitle: "High-Throughput APIs",
     description: "High-throughput REST APIs, bidirectional WebSockets, caching, and secure token authentication.",
     iconName: "Server",
     skills: [
@@ -48,7 +48,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "frontend",
     name: "Frontend Engineering",
-    nameDevanagari: "दृश्य इंटरफ़ेस",
+    subtitle: "Reactive Interfaces",
     description: "Modern, reactive, high-performance web interfaces with fluid motion and design systems.",
     iconName: "Layout",
     skills: [
@@ -67,7 +67,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "databases",
     name: "Databases & Storage",
-    nameDevanagari: "डेटाबेस संरचना",
+    subtitle: "Data Architectures",
     description: "Relational modeling, document stores, vector indexing, and memory cache tiers.",
     iconName: "Database",
     skills: [
@@ -84,7 +84,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "cloud-devops",
     name: "Cloud, DevOps & Tools",
-    nameDevanagari: "क्लाउड एवं उपकरण",
+    subtitle: "Infrastructure & CI/CD",
     description: "Containerization, automated deployments, testing suites, and collaborative version control.",
     iconName: "Cloud",
     skills: [

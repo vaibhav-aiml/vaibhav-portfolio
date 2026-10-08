@@ -23,8 +23,8 @@ export default function Footer() {
             <span className="font-display-hero text-2xl md:text-3xl text-on-surface font-bold group-hover:text-primary transition-colors">
               {personalData.name}
             </span>
-            <div className="text-xs font-devanagari text-gold font-bold mt-0.5">
-              {personalData.nameDevanagari} • जयपुर
+            <div className="text-xs text-gold font-code-tech-xs tracking-wider mt-0.5">
+              Full-Stack &amp; AI Engineer • Jaipur, India
             </div>
           </a>
         </div>
@@ -58,7 +58,7 @@ export default function Footer() {
           <p className="flex items-center gap-1.5">
             <span>Crafted with geometric precision in Jaipur</span>
             <span>•</span>
-            <span className="text-primary font-devanagari font-bold">राजस्थान</span>
+            <span className="text-primary font-semibold">India</span>
           </p>
           <p className="text-outline">
             © 2026 Vaibhav Badaya. All rights reserved.

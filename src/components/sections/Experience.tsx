@@ -15,10 +15,9 @@ export default function Experience() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative"
     >
       <SectionHeading
-        badge="❖ ०३ / EXPERIENCE"
+        badge="❖ 03 / EXPERIENCE"
         title="Engineering Internships & Technical Leadership"
         subtitle="Spearheading real-time modules, scalable database schemas, and AI research experimentation."
-        devanagariWatermark="अनुभव"
       />
 
       <div className="relative max-w-4xl mx-auto">
@@ -36,11 +35,11 @@ export default function Experience() {
                   isEven ? "md:flex-row-reverse" : ""
                 } gap-6 md:gap-12`}
               >
-                {/* Central Timeline Node (Diya flame dot) */}
+                {/* Central Timeline Node */}
                 <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-6 z-10 flex items-center justify-center">
                   <div className="w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center shadow-lg diya-glow">
-                    <span className="text-[10px] font-devanagari text-primary font-bold">
-                      {exp.devanagariIndex}
+                    <span className="text-[11px] font-code-tech-xs text-primary font-bold">
+                      {exp.index}
                     </span>
                   </div>
                 </div>

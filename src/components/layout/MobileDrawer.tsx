@@ -125,8 +125,8 @@ export default function MobileDrawer({ isOpen, onClose, activeSection }: MobileD
 
             {/* Drawer Footer */}
             <div className="pt-space-md border-t border-outline-variant/20 text-center">
-              <p className="text-code-tech-xs font-code-tech-xs text-outline font-devanagari">
-                विद्या ददाति विनयं • JAIPUR CYBER-REGAL
+              <p className="text-code-tech-xs font-code-tech-xs text-outline tracking-wider uppercase font-semibold">
+                ENGINEERED WITH RIGOR • JAIPUR, INDIA
               </p>
             </div>
           </motion.aside>

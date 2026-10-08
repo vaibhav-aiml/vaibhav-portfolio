@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4">
       <div className="w-16 h-16 rounded-2xl bg-surface-container-high border border-gold/40 flex items-center justify-center mb-6 shadow-xl">
-        <span className="font-devanagari text-2xl text-primary font-bold">४०४</span>
+        <span className="font-headline-lg text-2xl text-primary font-bold">404</span>
       </div>
       <h1 className="font-headline-lg text-4xl md:text-5xl font-bold text-on-surface mb-3">
         Page Not Found

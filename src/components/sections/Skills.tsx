@@ -23,10 +23,9 @@ export default function Skills() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative"
     >
       <SectionHeading
-        badge="❖ ०५ / SKILLS"
+        badge="❖ 05 / SKILLS"
         title="Technical Arsenal & Architectural Tooling"
         subtitle="Curated mastery across full-stack distributed systems, LLM infrastructure, and modern frontend paradigms."
-        devanagariWatermark="दक्षता"
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -56,8 +55,8 @@ export default function Skills() {
                       <h3 className="font-title-lg text-base md:text-lg text-on-surface font-bold group-hover:text-primary transition-colors">
                         {cat.name}
                       </h3>
-                      <span className="text-xs font-devanagari text-gold font-bold">
-                        {cat.nameDevanagari}
+                      <span className="text-xs text-gold font-medium">
+                        {cat.subtitle}
                       </span>
                     </div>
                   </div>

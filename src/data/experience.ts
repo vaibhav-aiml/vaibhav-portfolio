@@ -8,7 +8,7 @@ export interface ExperienceItem {
   isCurrent: boolean;
   highlights: string[];
   skills: string[];
-  devanagariIndex: string;
+  index: string;
 }
 
 export const experiences: ExperienceItem[] = [
@@ -26,7 +26,7 @@ export const experiences: ExperienceItem[] = [
       "Directed quality assurance across 8 rigorous testing categories utilizing Postman and Thunder Client.",
     ],
     skills: ["Supabase", "React", "Node.js", "PostgreSQL", "Postman", "Team Leadership"],
-    devanagariIndex: "०१",
+    index: "01",
   },
   {
     id: "quasys-ai",
@@ -42,6 +42,6 @@ export const experiences: ExperienceItem[] = [
       "Assessed latency, token efficiency, and retrieval strategies across various open-weight LLMs.",
     ],
     skills: ["AI Research", "LLMs", "PyTorch", "Model Evaluation", "Python"],
-    devanagariIndex: "०२",
+    index: "02",
   },
 ];

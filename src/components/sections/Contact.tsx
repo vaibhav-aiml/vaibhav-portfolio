@@ -68,10 +68,9 @@ export default function Contact() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative"
     >
       <SectionHeading
-        badge="❖ ०८ / CONTACT"
+        badge="❖ 08 / CONTACT"
         title="Initiate Dialogue & Collaboration"
         subtitle="Available for full-time engineering roles, technical internships, and selective contract consultations."
-        devanagariWatermark="संपर्क"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-6xl mx-auto">
@@ -269,7 +268,7 @@ export default function Contact() {
               {status === "success" && (
                 <div className="p-3.5 rounded-lg bg-tertiary/15 border border-tertiary/40 text-tertiary flex items-center gap-2 text-xs font-semibold">
                   <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  <span>धन्यवाद! Your message has been received. I will reply promptly.</span>
+                  <span>Thank you! Your message has been received. I will reply promptly.</span>
                 </div>
               )}
 
