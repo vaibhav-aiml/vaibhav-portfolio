@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-FitSphere" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0FA3B1" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#121221" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0B0B1A" stop-opacity="0.95"/>
+    </linearGradient>
+    <pattern id="jaali" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M15 0 L30 15 L15 30 L0 15 Z" fill="none" stroke="#0FA3B1" stroke-width="0.75" stroke-opacity="0.15"/>
+      <circle cx="15" cy="15" r="4" fill="none" stroke="#0FA3B1" stroke-width="0.5" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="#0B0B1A"/>
+  <rect width="800" height="450" fill="url(#bg-FitSphere)"/>
+  <rect width="800" height="450" fill="url(#jaali)"/>
+  
+  <!-- Cusped Arch outline -->
+  <path d="M100 450 L100 240 C100 120 220 80 400 80 C580 80 700 120 700 240 L700 450 Z" fill="none" stroke="#0FA3B1" stroke-width="1.5" stroke-opacity="0.3"/>
+  <circle cx="400" cy="80" r="6" fill="#0FA3B1" fill-opacity="0.6"/>
+
+  <!-- Center Card -->
+  <g transform="translate(400, 230)">
+    <circle cx="0" cy="-30" r="45" fill="#121221" stroke="#0FA3B1" stroke-width="2"/>
+    <text x="0" y="-18" font-size="34" text-anchor="middle" dominant-baseline="central">⚡</text>
+    <text x="0" y="45" font-family="'Bodoni Moda', serif" font-weight="700" font-size="28" fill="#E3E0F6" text-anchor="middle">FitSphere</text>
+    <rect x="-110" y="70" width="220" height="26" rx="13" fill="#1E1E2E" stroke="#0FA3B1" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="0" y="87" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="2" fill="#0FA3B1" font-weight="bold" text-anchor="middle">AI FITNESS APP</text>
+  </g>
+</svg>
