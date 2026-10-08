@@ -86,7 +86,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-body-md antialiased relative min-h-svh">
+      <body className="font-body-md antialiased relative min-h-svh jaali-grid-bg selection:bg-primary-container selection:text-surface-container-lowest">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

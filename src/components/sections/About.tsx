@@ -1,17 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Download, ExternalLink } from "lucide-react";
+import { Download, ExternalLink, Compass, ShieldCheck } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
 import { personalData } from "@/data/personal";
 
-const STATS = [
-  { label: "Projects Built", value: "6+", index: "01", detail: "Full-Stack & AI Systems" },
-  { label: "Max Concurrency", value: "50+", index: "02", detail: "Real-time WebSocket Users" },
-  { label: "Internships", value: "2", index: "03", detail: "Xebia & QuasysAI" },
-  { label: "Academic CGPA", value: "8.3", index: "04", detail: "JECRC University (AI & ML)" },
+const JANTAR_MANTAR_METRICS = [
+  { index: "01", label: "Production Systems", value: "6+", detail: "Shipped & Live" },
+  { index: "02", label: "Concurrent Streams", value: "50+", detail: "Sub-2s WebSockets" },
+  { index: "03", label: "Tech Internships", value: "2", detail: "Xebia & QuasysAI" },
+  { index: "04", label: "JECRC University CGPA", value: "8.3", detail: "B.Tech CSE (AI & ML)" },
 ];
 
 export default function About() {
@@ -22,160 +21,143 @@ export default function About() {
       className="py-space-2xl px-margin-mobile md:px-margin lg:px-margin-desktop relative overflow-hidden"
     >
       <SectionHeading
-        badge="❖ 02 / ABOUT"
-        title="Engineering Architectural Rigor & Neural Systems"
-        subtitle="Bridging classical computational craftsmanship with next-generation generative AI architectures."
+        badge="❖ 01 / THE ARCHITECT'S ROOTS"
+        title="Heritage & Discipline"
+        subtitle="Born in the pink sandstone grid of Jaipur. Observing software engineering as modern stone masonry: structured, symmetrical, and enduring under immense strain."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-        {/* Left Column: Cusped Arch Photo Frame (5 cols on lg) */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+        {/* Left Palace Pavilion Bio Card (8 cols) */}
         <motion.div
-          initial={{ opacity: 0, x: -24 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7 }}
-          className="lg:col-span-5 flex flex-col items-center justify-center"
+          className="lg:col-span-8 flex flex-col justify-between"
         >
-          <div className="relative group max-w-sm w-full mx-auto">
-            {/* Ambient Diya backlight */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-primary-container/20 via-maroon/30 to-gold/20 rounded-2xl blur-xl opacity-70 group-hover:opacity-100 transition duration-700 pointer-events-none" />
-
-            {/* Arch-Framed Container */}
-            <div className="relative glass-tier-2 p-3 md:p-4 rounded-2xl border border-gold/30 shadow-2xl">
-              {/* Decorative scalloped arch top indicator */}
-              <div className="flex items-center justify-between mb-3 px-1 text-gold/70">
-                <span className="text-code-tech-xs text-xs font-semibold">❖ JAIPUR</span>
-                <span className="text-code-tech-xs font-code-tech-xs text-[10px] uppercase tracking-widest text-primary">
-                  PORTRAIT ARCH
-                </span>
-                <span className="text-code-tech-xs text-xs font-semibold">2026 ❖</span>
-              </div>
-
-              {/* Photo */}
-              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-gold/20 bg-surface-container-lowest">
-                <Image
-                  src="/images/profile.jpg"
-                  alt="Vaibhav Badaya portrait"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none" />
-                
-                {/* Floating overlay chip */}
-                <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-lg bg-surface-container-high/90 border border-gold/25 backdrop-blur-md flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse" />
-                    <span className="text-code-tech-xs text-on-surface font-semibold tracking-wide">
-                      {personalData.title}
-                    </span>
-                  </div>
-                  <span className="text-[11px] font-code-tech-xs text-gold font-bold uppercase tracking-wider">
-                    {personalData.name}
-                  </span>
-                </div>
-              </div>
-
-              {/* Location telemetry footer */}
-              <div className="mt-3 pt-3 border-t border-gold/15 flex items-center justify-between text-xs text-on-surface-variant font-code-tech-xs">
-                <div className="flex items-center gap-1.5 text-primary">
-                  <MapPin className="w-3.5 h-3.5" />
-                  <span>{personalData.location}</span>
-                </div>
-                <span className="text-[10px] text-outline">{personalData.coordinates}</span>
-              </div>
+          <GlassCard
+            tier={2}
+            className="h-full p-6 sm:p-8 rounded-2xl border-primary/25 relative flex flex-col justify-between"
+          >
+            <div className="space-y-4 text-on-surface-variant font-body-lg text-sm sm:text-base md:text-lg leading-relaxed">
+              <p>
+                Born and shaped in the pink sandstone grid of Jaipur, I observe software
+                engineering as modern stone masonry: structured, symmetrical, yet enduring under
+                immense strain. Currently concluding my final year in{" "}
+                <span className="text-on-surface font-semibold">
+                  Computer Science (AI &amp; ML) at JECRC University
+                </span>{" "}
+                with an academic CGPA of{" "}
+                <span className="text-primary-container font-mono font-bold">8.3</span>.
+              </p>
+              <p>
+                My focus lies squarely where high-velocity web interfaces meet non-deterministic AI
+                models. From engineering real-time medical voice pipelines handling HIPAA-sensitive
+                streams with sub-2s latency, to benchmarking 4-bit quantized transformers under CTO
+                mentorship at QuasysAI, I build digital engines with royal precision.
+              </p>
             </div>
-          </div>
+
+            {/* Jantar Mantar Telemetry Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 pt-6 border-t border-outline-variant/30">
+              {JANTAR_MANTAR_METRICS.map((metric, idx) => (
+                <div key={idx} className="p-2 sm:p-3 rounded-lg bg-surface-container-high/40 border border-outline-variant/30">
+                  <div className="font-code-tech-xs text-[10px] text-primary font-bold">
+                    {metric.index} · METRIC
+                  </div>
+                  <div className="font-headline-sm text-xl sm:text-2xl font-bold text-on-surface mt-0.5">
+                    {metric.value}
+                  </div>
+                  <div className="font-body-sm text-xs text-outline line-clamp-1">
+                    {metric.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* CTAs row */}
+            <div className="flex flex-wrap items-center gap-3 mt-6 pt-4 border-t border-outline-variant/20">
+              <a
+                href={personalData.resumePath}
+                download
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-surface-container-lowest font-label-caps text-xs uppercase font-bold hover:scale-[1.02] transition-all"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Download Resume</span>
+              </a>
+              <a
+                href={personalData.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg glass-tier-1 text-on-surface hover:text-primary border-primary/30 transition-all font-label-caps text-xs uppercase font-semibold"
+              >
+                <span>LinkedIn Profile</span>
+                <ExternalLink className="w-3.5 h-3.5 text-primary" />
+              </a>
+            </div>
+          </GlassCard>
         </motion.div>
 
-        {/* Right Column: Bio & Core Qualifications (7 cols on lg) */}
+        {/* Right Side Jaipur City Grid Telemetry Card (4 cols) */}
         <motion.div
-          initial={{ opacity: 0, x: 24 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="lg:col-span-7 space-y-6"
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="lg:col-span-4 flex flex-col justify-between"
         >
-          {/* Bio introduction */}
-          <div className="space-y-4 text-on-surface-variant font-body-md text-sm md:text-base leading-relaxed">
-            <p>
-              I am a <strong className="text-on-surface font-semibold">Full-Stack &amp; AI Engineer</strong> pursuing
-              my B.Tech in Computer Science &amp; Engineering (Artificial Intelligence &amp; Machine Learning) at{" "}
-              <strong className="text-primary font-semibold">JECRC University, Jaipur</strong> (CGPA 8.3/10, graduating May 2027).
-            </p>
-            <p>
-              My engineering focuses on architecting <span className="text-on-surface font-medium">high-throughput REST APIs</span>,
-              responsive real-time systems, and <span className="text-tertiary font-medium">LLM-powered applications</span>. From streaming
-              sub-2s healthcare consultations with Groq and WebSockets to topological fraud detection with Graph Neural Networks,
-              I engineer resilient distributed backends connected to sleek, reactive frontends.
-            </p>
-            <p className="text-sm border-l-2 border-primary/50 pl-4 italic text-on-surface/80 bg-primary/5 py-2 rounded-r-lg">
-              &ldquo;Drawing inspiration from Vidyadhar Bhattacharya&apos;s 1727 Jaipur grid, I treat software architecture
-              with geometric precision—building high-concurrency systems as enduring as royal fortified stonework.&rdquo;
-            </p>
-          </div>
-
-          {/* Education & Credentials Badge */}
-          <GlassCard tier={1} className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-gold/25">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0">
-                <GraduationCap className="w-5 h-5" />
+          <GlassCard
+            tier={2}
+            className="h-full p-6 sm:p-7 rounded-2xl border-primary/25 relative flex flex-col justify-between space-y-6"
+          >
+            <div>
+              <div className="flex items-center justify-between border-b border-outline-variant/30 pb-3 mb-5">
+                <div className="flex items-center gap-2">
+                  <Compass className="w-4 h-4 text-primary" />
+                  <span className="font-code-tech-xs text-xs text-outline uppercase tracking-wider font-semibold">
+                    Spatial Coordinates
+                  </span>
+                </div>
+                <span className="font-code-tech-xs text-xs text-primary font-bold">
+                  JAIPUR · RJ · IN
+                </span>
               </div>
-              <div>
-                <h3 className="font-title-md text-sm md:text-base text-on-surface font-bold">
-                  {personalData.degree}
-                </h3>
-                <p className="text-body-sm text-xs text-on-surface-variant">
-                  {personalData.university} • CGPA {personalData.cgpa}/10 • Graduating {personalData.graduatingYear}
-                </p>
+
+              <div className="space-y-3.5 font-code-tech-sm text-xs sm:text-sm">
+                <div className="flex justify-between items-center py-1 border-b border-outline-variant/15">
+                  <span className="text-on-surface-variant">Latitude:</span>
+                  <span className="text-tertiary font-mono font-bold">26.9124° N</span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-outline-variant/15">
+                  <span className="text-on-surface-variant">Longitude:</span>
+                  <span className="text-tertiary font-mono font-bold">75.7873° E</span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-outline-variant/15">
+                  <span className="text-on-surface-variant">Grid System:</span>
+                  <span className="text-on-surface font-medium">Navagraha 9-Square</span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-outline-variant/15">
+                  <span className="text-on-surface-variant">Primary Shell:</span>
+                  <span className="text-primary-container font-medium">Zsh / Neovim / Docker</span>
+                </div>
+                <div className="flex justify-between items-center py-1">
+                  <span className="text-on-surface-variant">Academic Base:</span>
+                  <span className="text-gold font-medium">JECRC University</span>
+                </div>
               </div>
             </div>
-            <span className="text-code-tech-xs px-2.5 py-1 rounded bg-gold/15 text-gold border border-gold/30 font-bold shrink-0">
-              JAIPUR, RAJASTHAN
-            </span>
+
+            {/* Core Ethos Callout Box */}
+            <div className="p-4 rounded-xl bg-surface-container-high/70 border border-outline-variant/40 relative">
+              <div className="flex items-center gap-1.5 font-code-tech-xs text-[10px] text-primary uppercase mb-1 font-bold">
+                <ShieldCheck className="w-3 h-3 text-primary" />
+                <span>Core Ethos</span>
+              </div>
+              <div className="font-title-md text-sm sm:text-base font-semibold text-on-surface italic">
+                &ldquo;Form follows structure, telemetry verifies truth.&rdquo;
+              </div>
+            </div>
           </GlassCard>
-
-          {/* Animated 4-Stat Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {STATS.map((stat, idx) => (
-              <GlassCard key={idx} tier={2} className="p-3 text-center border-gold/20 hover:border-primary/50 transition-colors">
-                <div className="text-[10px] font-code-tech-xs text-gold font-bold mb-1 opacity-80">
-                  {stat.index}
-                </div>
-                <div className="font-display-hero text-2xl md:text-3xl text-primary font-bold tracking-tight">
-                  {stat.value}
-                </div>
-                <div className="text-code-tech-xs text-on-surface font-semibold mt-1">
-                  {stat.label}
-                </div>
-                <div className="text-[10px] text-on-surface-variant/70 mt-0.5 line-clamp-1">
-                  {stat.detail}
-                </div>
-              </GlassCard>
-            ))}
-          </div>
-
-          {/* Quick Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3 pt-2">
-            <a
-              href={personalData.resumePath}
-              download
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-surface font-label-caps text-label-caps uppercase tracking-wider font-bold hover:scale-[1.02] transition-all focus-saffron"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>Download Resume</span>
-            </a>
-            <a
-              href={personalData.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg glass-tier-1 text-on-surface hover:text-primary border-gold/30 hover:border-primary transition-all font-label-caps text-label-caps uppercase tracking-wider"
-            >
-              <span>LinkedIn Profile</span>
-              <ExternalLink className="w-3.5 h-3.5 text-primary" />
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>

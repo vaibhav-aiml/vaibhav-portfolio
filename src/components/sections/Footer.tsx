@@ -56,10 +56,19 @@ export default function Footer() {
         {/* Heritage Signature & Copyright */}
         <div className="pt-6 border-t border-gold/15 w-full flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-on-surface-variant font-code-tech-xs">
           <p className="flex items-center gap-1.5">
-            <span>Crafted with geometric precision in Jaipur</span>
+            <span>Made with <span className="text-red-500">❤️</span> in Jaipur</span>
             <span>•</span>
-            <span className="text-primary font-semibold">India</span>
+            <span className="text-primary font-semibold">Vaibhav Badaya</span>
           </p>
+
+          <a
+            href="#hero"
+            className="text-primary hover:text-primary-container flex items-center gap-1 uppercase font-semibold transition-colors"
+          >
+            <span>Return to Apex</span>
+            <span>↑</span>
+          </a>
+
           <p className="text-outline">
             © 2026 Vaibhav Badaya. All rights reserved.
           </p>

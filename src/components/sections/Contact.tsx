@@ -151,6 +151,22 @@ export default function Contact() {
               </div>
             </div>
 
+            {/* Physical Base Station Badge */}
+            <div className="p-3.5 rounded-xl bg-surface-container-high/60 border border-outline-variant/30 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-primary-container shrink-0" />
+                <div>
+                  <div className="font-code-tech-xs text-[10px] text-outline uppercase font-semibold">
+                    Physical Base Station
+                  </div>
+                  <div className="font-code-tech-sm text-xs text-on-surface font-medium">
+                    Pink City Metro Grid • 26.9124° N, 75.7873° E
+                  </div>
+                </div>
+              </div>
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping shrink-0" />
+            </div>
+
             {/* Availability Pill */}
             <div className="p-3.5 rounded-lg bg-primary/10 border border-primary/30 flex items-center gap-3">
               <span className="relative flex h-2.5 w-2.5">
@@ -159,7 +175,7 @@ export default function Contact() {
               </span>
               <div className="text-xs">
                 <span className="font-bold text-primary">Currently Available:</span>{" "}
-                <span className="text-on-surface-variant">Internships, full-time engineering &amp; freelance.</span>
+                <span className="text-on-surface-variant">Summer 2026 internships, full-time engineering &amp; freelance.</span>
               </div>
             </div>
           </GlassCard>

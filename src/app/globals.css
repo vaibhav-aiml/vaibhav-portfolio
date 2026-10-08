@@ -221,6 +221,49 @@
       #fff8f0 100%
     );
   }
+
+  /* Jaipur Jaali Lattice & Cyber Wireframe grid */
+  .jaali-grid-bg {
+    background-image: 
+      radial-gradient(circle at 50% 30%, rgba(255, 153, 51, 0.08) 0%, transparent 65%),
+      linear-gradient(to right, rgba(255, 192, 141, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 192, 141, 0.035) 1px, transparent 1px);
+    background-size: 100% 100%, 36px 36px, 36px 36px;
+  }
+
+  /* Royal Diya & Cyber-Neon Glows */
+  .diya-glow {
+    box-shadow: 0 0 24px rgba(255, 153, 51, 0.35), 0 0 8px rgba(242, 183, 5, 0.25);
+  }
+  .diya-glow-intense {
+    box-shadow: 0 0 36px rgba(255, 153, 51, 0.55), 0 0 16px rgba(242, 183, 5, 0.4), 0 0 45px rgba(200, 75, 49, 0.3);
+  }
+  .cyan-glow {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+  }
+  .neon-glow-pink {
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.35);
+  }
+
+  /* Subtle CRT cyber scanlines overlay */
+  .cyber-scanlines {
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%);
+    background-size: 100% 4px;
+  }
+}
+
+/* Marquee continuous ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 26s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 /* ═══════════════════════════════════════════════════════════════

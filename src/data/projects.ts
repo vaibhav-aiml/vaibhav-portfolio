@@ -13,6 +13,7 @@ export interface ProjectItem {
   liveUrl: string;
   githubUrl: string;
   index: string;
+  telemetryHighlight: string;
 }
 
 export const projectCategories = ["All", "AI-ML", "Full-Stack", "Backend"] as const;
@@ -55,6 +56,7 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://majestic-speculoos-f73a91.netlify.app/",
     githubUrl: "https://github.com/vaibhav-aiml/ai-medical-voice-agent",
     index: "01",
+    telemetryHighlight: "Sub-2s streaming for 50+ concurrent users · HIPAA / HL7 Compliant",
   },
   {
     id: "fitsphere",
@@ -89,6 +91,7 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://fitsphere-phi.vercel.app",
     githubUrl: "https://github.com/vaibhav-aiml/fitsphere",
     index: "02",
+    telemetryHighlight: "AI workout coach + 1RM tracking & form evaluation",
   },
   {
     id: "truffle",
@@ -123,6 +126,7 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://truffle-agent-qq5mv4nx7wocr2jrrzbvkw.streamlit.app/",
     githubUrl: "https://github.com/vaibhav-aiml/truffle-agent",
     index: "03",
+    telemetryHighlight: "Redis circuit breaker + AST-level query validation",
   },
   {
     id: "aml-gnn-upi",
@@ -157,6 +161,7 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi",
     githubUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi",
     index: "04",
+    telemetryHighlight: "GraphSAGE 61.92% AUC-ROC on cold nodes & explainable subgraphs",
   },
   {
     id: "linkedin-post-generator",
@@ -181,6 +186,7 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://tubular-bonbon-644eda.netlify.app/",
     githubUrl: "https://github.com/vaibhav-aiml/linkedin-post-generator",
     index: "05",
+    telemetryHighlight: "One-click tone shifting & virality scoring",
   },
   {
     id: "codeviz-ai",
@@ -205,5 +211,6 @@ export const projects: ProjectItem[] = [
     liveUrl: "https://codeviz-ai-seven.vercel.app/",
     githubUrl: "https://github.com/vaibhav-aiml/codeviz-ai",
     index: "06",
+    telemetryHighlight: "Zero-latency canvas render via React Flow & AST parsing",
   },
 ];

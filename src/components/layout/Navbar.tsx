@@ -74,12 +74,15 @@ export default function Navbar() {
             </button>
             <Link
               href="#hero"
-              className="text-headline-sm font-headline-sm font-bold text-primary tracking-wider flex items-center gap-1.5 group"
+              className="flex items-center gap-2.5 group active:scale-95 transition-transform duration-150"
             >
-              <span>VB.ai</span>
-              <span className="text-code-tech-xs font-code-tech-xs text-primary-container font-semibold tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">
-                JAIPUR
-              </span>
+              <div className="w-8 h-8 rounded-lg bg-surface-container-low border border-primary/40 flex items-center justify-center text-primary group-hover:border-primary group-hover:diya-glow transition-all">
+                <span className="font-headline-sm text-xs font-bold text-primary tracking-wider">VB</span>
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="font-title-md text-xs font-bold text-primary tracking-tight leading-none">VB.ai</span>
+                <span className="font-code-tech-xs text-[8px] text-outline tracking-widest uppercase mt-0.5">JAIPUR</span>
+              </div>
             </Link>
           </div>
           <div className="flex items-center gap-space-sm">
@@ -101,12 +104,15 @@ export default function Navbar() {
           {/* Brand */}
           <Link
             href="#hero"
-            className="text-headline-sm font-headline-sm font-bold text-primary tracking-wider flex items-center gap-1.5 group"
+            className="flex items-center gap-3 group active:scale-95 transition-transform duration-150"
           >
-            <span>VB.ai</span>
-            <span className="text-code-tech-xs font-code-tech-xs text-primary-container font-semibold tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">
-              JAIPUR
-            </span>
+            <div className="w-10 h-10 rounded-lg bg-surface-container-low border border-primary/40 flex items-center justify-center text-primary group-hover:border-primary group-hover:diya-glow transition-all">
+              <span className="font-headline-sm text-base font-bold text-primary tracking-wider">VB</span>
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="font-title-md text-sm font-bold text-primary tracking-tight leading-none">VB.ai</span>
+              <span className="font-code-tech-xs text-[10px] text-outline tracking-widest uppercase mt-0.5">JAIPUR · 26.9124° N</span>
+            </div>
           </Link>
 
           {/* Nav links */}
