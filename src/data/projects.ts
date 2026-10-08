@@ -52,8 +52,8 @@ export const projects: ProjectItem[] = [
       "Full Redis-based token bucket rate limiting on 15+ routes",
       "23 comprehensive Vitest integration and unit test suites",
     ],
-    liveUrl: "https://medivoice-ai.demo.vaibhavbadaya.dev", // TODO placeholder
-    githubUrl: "https://github.com/vaibhav-aiml/medivoice-ai", // TODO placeholder
+    liveUrl: "https://majestic-speculoos-f73a91.netlify.app/",
+    githubUrl: "https://github.com/vaibhav-aiml/medivoice-ai",
     devanagariIndex: "०१",
   },
   {
@@ -86,8 +86,8 @@ export const projects: ProjectItem[] = [
       "Dynamic social fitness feed with community milestone sharing",
       "Robust MongoDB aggregation pipeline for nutritional telemetry",
     ],
-    liveUrl: "https://fitsphere.demo.vaibhavbadaya.dev", // TODO placeholder
-    githubUrl: "https://github.com/vaibhav-aiml/fitsphere", // TODO placeholder
+    liveUrl: "https://fitsphere-phi.vercel.app",
+    githubUrl: "https://github.com/vaibhav-aiml/fitsphere",
     devanagariIndex: "०२",
   },
   {
@@ -120,8 +120,8 @@ export const projects: ProjectItem[] = [
       "Fault-tolerant Redis circuit breaker for LLM fallback handling",
       "Docker containerized microservice with automated health checks",
     ],
-    liveUrl: "https://truffle-ai.demo.vaibhavbadaya.dev", // TODO placeholder
-    githubUrl: "https://github.com/vaibhav-aiml/truffle", // TODO placeholder
+    liveUrl: "https://truffle-agent-qq5mv4nx7wocr2jrrzbvkw.streamlit.app/",
+    githubUrl: "https://github.com/vaibhav-aiml/truffle",
     devanagariIndex: "०३",
   },
   {
@@ -154,8 +154,8 @@ export const projects: ProjectItem[] = [
       "Topological fraud pattern classification with 61.92% AUC-ROC",
       "Interactive GNNExplainer visual feature attribution subgraphs",
     ],
-    liveUrl: "https://aml-gnn.demo.vaibhavbadaya.dev", // TODO placeholder
-    githubUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi", // TODO placeholder
+    liveUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi",
+    githubUrl: "https://github.com/vaibhav-aiml/aml-gnn-upi",
     devanagariIndex: "०४",
   },
   {
@@ -178,8 +178,8 @@ export const projects: ProjectItem[] = [
       "Algorithmic hook generation tuned for professional audiences",
       "Integrated performance analytics dashboard tracking post velocity",
     ],
-    liveUrl: "https://linkedin-generator.demo.vaibhavbadaya.dev", // TODO placeholder
-    githubUrl: "https://github.com/vaibhav-aiml/linkedin-post-generator", // TODO placeholder
+    liveUrl: "https://tubular-bonbon-644eda.netlify.app/",
+    githubUrl: "https://github.com/vaibhav-aiml/linkedin-post-generator",
     devanagariIndex: "०५",
   },
   {
@@ -202,8 +202,8 @@ export const projects: ProjectItem[] = [
       "Automated microservice and component relationship mapping",
       "Instant export to SVG, Mermaid syntax, and documentation formats",
     ],
-    liveUrl: "https://codeviz-ai.demo.vaibhavbadaya.dev", // TODO placeholder
-    githubUrl: "https://github.com/vaibhav-aiml/codeviz-ai", // TODO placeholder
+    liveUrl: "https://codeviz-ai-seven.vercel.app/",
+    githubUrl: "https://github.com/vaibhav-aiml/codeviz-ai",
     devanagariIndex: "०६",
   },
 ];
