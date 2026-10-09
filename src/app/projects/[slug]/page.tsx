@@ -94,20 +94,22 @@ export default async function ProjectPage({ params }: Props) {
       </div>
 
       {/* Hero Showcase (Video or Architectural Frame) */}
-      <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-primary/30 mb-12 shadow-2xl bg-surface-container-lowest">
+      <div className="relative w-full rounded-2xl overflow-hidden border border-primary/40 mb-12 shadow-2xl bg-surface-container-lowest diya-glow">
         {project.videoUrl ? (
-          <video
-            src={project.videoUrl}
-            controls
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster={project.image}
-            className="w-full h-full object-cover"
-          />
+          <div className="relative w-full">
+            <video
+              src={project.videoUrl}
+              controls
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster={project.image}
+              className="w-full h-auto block rounded-2xl"
+            />
+          </div>
         ) : (
-          <>
+          <div className="relative aspect-[16/9] w-full">
             <Image
               src={project.image}
               alt={`${project.title} detailed architectural showcase`}
@@ -117,7 +119,7 @@ export default async function ProjectPage({ params }: Props) {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none" />
-          </>
+          </div>
         )}
       </div>
 

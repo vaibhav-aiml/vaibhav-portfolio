@@ -58,6 +58,7 @@ export const projects: ProjectItem[] = [
     githubUrl: "https://github.com/vaibhav-aiml/ai-medical-voice-agent",
     index: "01",
     telemetryHighlight: "Sub-2s streaming for 50+ concurrent users · HIPAA / HL7 Compliant",
+    videoUrl: "/videos/medivoice-demo.mp4",
   },
   {
     id: "fitsphere",
