@@ -94,6 +94,7 @@ export const projects: ProjectItem[] = [
     githubUrl: "https://github.com/vaibhav-aiml/fitsphere",
     index: "02",
     telemetryHighlight: "AI workout coach + 1RM tracking & form evaluation",
+    videoUrl: "/videos/fitsphere-demo.mp4",
   },
   {
     id: "truffle",
